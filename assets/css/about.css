@@ -1,0 +1,251 @@
+﻿/*原始設定*/
+* {
+    width: 100%;
+}
+
+.index {
+    background: #fdf3de;
+    width: 100%;
+}
+
+/*header*/
+.nav-item {
+    color: #fdf3de;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.navbg {
+    background: #aa2d29;
+}
+
+.chinese {
+    font-family: "Noto Serif TC", serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.bar-position {
+    margin-left: 43%;
+}
+
+
+/*關於我們標題*/
+.aboutus-title {
+    color: #19461f;
+    margin: 100px;
+    padding: 30px 30px;
+    max-width: 1200px;
+    font-family: "Noto Serif TC", serif;
+    background-color: #FFB057;
+    border-radius: 40px;
+    text-align: center;
+    margin-left: 19%;
+}
+
+.aboutus-title:hover {
+    transform: scale(1.08);
+}
+
+#au1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Noto Serif TC", serif;
+}
+
+#au2 {
+    font-size: 20px;
+    font-family: "Noto Serif TC", serif;
+}
+
+/*about個人圖片和動畫new*/
+.about {
+    max-width: 100%;
+    position: relative;
+    padding: 30px;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    margin-top: -5%;
+
+}
+
+.aboutuscont {
+    width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    margin: auto;
+}
+
+.aboutus-pc {
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    padding: 40px;
+    margin: auto;
+    background-color: #22652b;
+    box-shadow: 0 0px 30px rgba(117, 111, 111, 0.438);
+    position: relative;
+    top: 10px;
+    box-shadow: 5px 5px 1px #430d0b;
+}
+
+.aboutus-pc:hover {
+    transform: rotate(180deg);
+    transition: 0.9s;
+}
+
+.ig {
+    margin: 20px;
+    width: 60px
+}
+
+.flickr {
+    margin-right: 20px;
+    width: 60px
+}
+
+.fb {
+    width: 60px
+}
+
+/*地址標題*/
+.aboutmap-title {
+    color: #19461f;
+    margin: 10px 100px;
+    padding: 30px 30px;
+    max-width: 300px;
+    font-family: "Noto Serif TC", serif;
+    background-color: #FFB057;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.aboutmap-title:hover {
+    transform: scale(0.8);
+}
+
+#am1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Noto Serif TC", serif;
+}
+
+/*地址*/
+.map {
+    margin: -100px 420px;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0 10px 10px -1px;
+}
+
+/*聯絡*/
+.m-cont {
+    width: 900px;
+    padding: 20px 30px;
+    margin: -100px 420px 60px;
+    background-color: #aa2d29;
+    box-shadow: 0 10px 10px -1px;
+}
+
+.m-cont h1 {
+    font-family: 辰宇落雁體 Thin;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-align: center;
+    color: #fdf3de;
+}
+
+.m-cont p {
+    font-family: 辰宇落雁體 Thin;
+    font-size: 30px;
+    text-align: left;
+    color: #fdf3de;
+}
+
+.m-cont input {
+    font-family: 辰宇落雁體 Thin;
+    font-size: 30px;
+    color: #fdf3de;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #353535;
+    padding: 2px 0px;
+    margin-bottom: 20px;
+    outline: none;
+    /*點擊時不要出現邊框*/
+}
+
+.m-cont textarea {
+    font-family: 辰宇落雁體 Thin;
+    font-size: 30px;
+    color: #fdf3de;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #353535;
+    outline: none;
+    /*點擊時不要出現邊框*/
+}
+
+::placeholder {
+    color: #000000;
+}
+
+.m-cont button {
+    font-family: 辰宇落雁體 Thin;
+    font-size: 30px;
+    letter-spacing: 3px;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    background-color: #750b0b;
+    border: 0.5px solid #353535;
+    transition: .3s;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.m-cont button:hover {
+    cursor: pointer;
+    color: black;
+    background: none;
+}
+
+
+/*版權*/
+footer {
+    clear: both;
+    background-color: #19461f;
+    font-family: "Noto Serif TC", serif;
+    text-align: center;
+    color: #fdf3de;
+    padding: 15px;
+}
+
+/*GoTOP*/
+.gotop {
+    position: fixed;
+    z-index: 90;
+    right: 5%;
+    bottom: 40px;
+    display: none;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: #39642a;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}

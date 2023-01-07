@@ -1,0 +1,87 @@
+/*原始設定*/
+* {
+    width: 100%;
+}
+
+.index {
+    background: #fdf3de;
+    width: 100%;
+}
+
+/*header*/
+.nav-item {
+    color: #fdf3de;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.navbg {
+    background: #aa2d29;
+}
+
+.chinese {
+    font-family: "Noto Serif TC", serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bar-position {
+    margin-left: 43%;
+}
+
+
+/*中間*/
+.recodebutton1 {
+    width: 160px;
+    height: auto;
+    margin-top: -50px;
+    margin-left: 680px;
+    border: 1px;
+    color: #fdf3de;
+    background-color: #aa2d29;
+}
+
+.recodebutton {
+    width: 160px;
+    height: auto;
+    margin-top: -50px;
+    margin-left: 680px;
+    border: 1px;
+    color: #fdf3de;
+    background-color: #aa2d29;
+}
+
+.recodebutton:hover {
+    background-color: #19461f;
+    transition: .3s;
+}
+
+/*版權*/
+footer {
+    clear: both;
+    background-color: #19461f;
+    font-family: "Noto Serif TC", serif;
+    text-align: center;
+    color: #fdf3de;
+    padding: 15px;
+}
+
+/*GoTOP*/
+.gotop {
+    position: fixed;
+    z-index: 90;
+    right: 5%;
+    bottom: 40px;
+    display: none;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: #39642a;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}

@@ -1,0 +1,74 @@
+/*原始設定*/
+* {
+    width: 100%;
+}
+
+.index {
+    background: #fdf3de;
+    width: 100%;
+}
+
+/*header*/
+.nav-item {
+    color: #fdf3de;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.navbg {
+    background: #aa2d29;
+}
+
+.chinese {
+    font-family: "Noto Serif TC", serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.bar-position {
+    margin-left: 43%;
+}
+
+
+/*中間*/
+.star {
+    color: rgb(243, 213, 114);
+    font-size: 25px;
+}
+
+/*版權*/
+footer {
+    clear: both;
+    background-color: #19461f;
+    font-family: "Noto Serif TC", serif;
+    text-align: center;
+    color: #fdf3de;
+    padding: 15px;
+    margin-top: 4%;
+}
+
+/*GoTOP*/
+.gotop {
+    position: fixed;
+    z-index: 90;
+    right: 5%;
+    bottom: 40px;
+    display: none;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: #39642a;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}

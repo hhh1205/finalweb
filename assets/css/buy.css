@@ -1,0 +1,177 @@
+* {
+    width: 100%;
+}
+
+.index {
+    background: #fdf3de;
+    width: 100%;
+}
+
+/*header*/
+.nav-item {
+    color: #fdf3de;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.navbg {
+    background: #aa2d29;
+}
+
+.chinese {
+    font-family: "Noto Serif TC", serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.slides {
+    border-radius: 15%;
+}
+.bar-position{
+    margin-left: 43%;
+}
+
+
+
+/*版權*/
+footer {
+    clear: both;
+    background-color: #19461f;
+    font-family: "Noto Serif TC", serif;
+    text-align: center;
+    color: #fdf3de;
+    padding: 15px;
+}
+
+.listgroupmargin {
+    margin-bottom: 10px;
+}
+
+.productmargin {
+    margin-top: 150px;
+}
+
+.productmainimg {
+    margin-bottom: 20px;
+}
+
+.bannerWord {
+    display: block;
+    margin: 4% auto 0px auto;
+    width: 65%;
+    z-index: 2;
+}
+
+.bannermargin {
+    margin: 0px 0px 20px 0px;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background: gray;
+}
+
+
+/*GoTOP*/
+.gotop {
+    position: fixed;
+    z-index: 90;
+    right: 5%;
+    bottom: 40px;
+    display: none;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: #39642a;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+
+/*buy*/
+.ordertitle {
+    margin-top: -20px;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.text-center {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    font-size: 20px;
+}
+
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+.infostyle {
+    font-size: 17px;
+    font-family: "Noto Serif TC", serif;
+    width: fit-content;
+    text-align: center;
+    margin-left: 39%;
+}
+
+.backtocart {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    width: 15%;
+    justify-content: left;
+    margin-left: 43%;
+    font-size: 20px;
+}
+
+.buy-button {
+    width: 100%;
+    text-align: center;
+}
+
+html,
+body {
+    height: 80%;
+}
+
+.header {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 900;
+}
+
+.main-content {
+    margin-top: 2%;
+    margin-bottom: -5%;
+}
+
+.order {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -60%;
+}
+
+
+footer {
+    position: relative;
+    bottom: -1200px;
+    height: 50px;
+}

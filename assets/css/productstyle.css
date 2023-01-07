@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif TC", serif;
+}
+
+.index {
+    background: #fdf3de;
+    width: 100%;
+}
+
+/*header*/
+.nav-item {
+    color: #fdf3de;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.navbg {
+    background: #aa2d29;
+}
+
+.chinese {
+    font-family: "Noto Serif TC", serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.bar-position{
+    margin-left: 70%;
+}
+
+/*商品內容*/
+
+.intro-back {
+    border-radius: 10px;
+    display: flex;
+}
+
+.intro-sec1 {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pic {
+    overflow: hidden;
+    margin-right: 3%;
+    display: flex;
+    background-color: white;
+    padding: 10px;
+}
+
+.pic img {
+    width: 500px;
+    height: 100%;
+}
+
+.intro-main1 {
+    margin-left: 50px;
+}
+
+.name h1 {
+    font-family: "Noto Serif TC", serif;
+    font-size: 35px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.price {
+    font-family: Verdana, sans-serif;
+    color: #a9170d;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.inventory {
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    color: rgb(90, 90, 90);
+}
+
+.flex {
+    display: flex;
+}
+
+.quantity {
+    border: 1px solid #b1b1b1;
+    padding: 0px 15px;
+}
+
+.quantity input {
+    font-family: "Noto Serif TC", serif;
+    font-size: 16px;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 0px 3px;
+    text-align: center;
+}
+
+.add {
+    font-family: "Noto Serif TC", serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 0px 67px;
+    margin-left: 10px;
+    background-color: #ececec;
+    border: 1px solid #b1b1b1;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: #FFB057;
+}
+
+.buy {
+    font-family: "Noto Serif TC", serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    height: 43px;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #aa2d29;
+    border: 1px solid #353535;
+    transition: .3s;
+    margin-bottom: 35px;
+}
+
+.buy:hover {
+    background-color: #19461f;
+}
+
+/*商品資訊*/
+.info {
+    font-family: "Noto Serif TC", serif;
+    font-size: 20px;
+    font-weight: 550;
+    overflow: hidden;
+    border-bottom: 2px solid #19461f;
+    color: #19461f
+}
+
+.infocontent {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding: 12px 0px;
+}
+
+/*評論*/
+.intro-back2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    min-height: 650px;
+    padding: 100px 0px;
+}
+
+.comment {
+    width: 500px;
+    margin-right: 50px;
+}
+
+.comment h1 {
+    font-family: 辰宇落雁體 Thin;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.comment input {
+    font-family: 辰宇落雁體 Thin;
+    font-size: 25px;
+    color: #202020;
+    width: 100%;
+    padding: 2px 0px;
+    margin: 20px 0px;
+}
+
+.comment p {
+    font-family: 辰宇落雁體 Thin;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.comment textarea {
+    font-family: 辰宇落雁體 Thin;
+    font-size: 25px;
+    color: #353535;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #353535;
+    outline: none;
+}
+
+.comment button {
+    font-family: 辰宇落雁體 Thin;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: #19461f;
+    border: 1px solid #19461f;
+    margin-top: 15px;
+    transition: .3s;
+}
+
+.comment button:hover {
+    background-color: #aa2d29;
+}
+
+/*星星*/
+.rating {
+    position: relative;
+    transform: rotateY(180deg);
+    display: flex;
+    float: left;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+}
+
+.rating label:before {
+    content: '★';
+    display: block;
+    font-size: 25px;
+    color: #929292;
+    margin-right: 5px;
+}
+
+.rating label:after {
+    content: '★';
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    color: rgb(243, 213, 114);
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+    text-shadow: 0;
+}
+
+.rating label:hover:after,
+.rating label:hover~label:after,
+.rating input:checked~label:after {
+    opacity: 1;
+}
+
+
+/*大家怎麼說*/
+.review {
+    width: 500px;
+    height: 100%;
+    margin-left: 80px;
+    background-color: white;
+    padding: 0px 30px 30px 30px;
+}
+
+.review h1 {
+    font-family: 辰宇落雁體 Thin;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.viewbox {
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.viewicon {
+    width: 30px;
+    margin-right: 5px;
+}
+
+
+.customer {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.star {
+    color: rgb(243, 213, 114);
+}
+
+.txt p {
+    font-family: 辰宇落雁體 Thin;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 40px;
+}
+
+/*上團圖片*/
+#myform {
+    margin-left: 250px;
+}
+
+.delete {
+    width: 60%;
+    padding: 20px;
+    background-color: #c2bdb2;
+    border: 1px solid #b1b1b1;
+    margin-bottom: 3%;
+    font-size: 20px;
+}
+
+/*版權*/
+footer {
+    clear: both;
+    background-color: #19461f;
+    font-family: "Noto Serif TC", serif;
+    text-align: center;
+    color: #fdf3de;
+    padding: 15px;
+}
+
+/*GoTOP*/
+.gotop {
+    position: fixed;
+    z-index: 90;
+    right: 5%;
+    bottom: 40px;
+    display: none;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: #39642a;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
