@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員資料 - 剩單</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet"/>
+    <link rel="icon" href="../assets/images/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="..//assets/css/index.css">
+    <style>
+        /* customizable snowflake styling */
+        .snowflake {
+          color: #fff;
+          font-size: 1em;
+          font-family: Arial, sans-serif;
+          text-shadow: 0 0 5px #000;
+        }
+        @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+        </style>
+        <div class="snowflakes" aria-hidden="true">
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+        </div>
+</head>
+<body class="index" style="font-family: Noto Serif TC,serif";>
+    <!--////網頁功能選單在這裡///-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbg fixed-top">
+            <!--///LOGO圖案在這裡///-->
+            <a class="navbar-brand padding0" href="./index.html"><img class="img-fluid" style="width:120px;" src="../assets/images/logo_red.jpg"></a>
+            <!--///LOGO圖案結束了///-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="bar-position">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav marginrightauto">
+                      <li class="nav-item">
+                          <a class="nav-link chinese" href="./membersignin.html" style="color:#fdf3de;">登入</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link chinese" href="./membercenter.html" style="color:#fdf3de;">剩單中心</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle chinese" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#fdf3de;" >所有杯具</a>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item chinese" href="./christmas.html">聖誕老杯杯</a>
+                              <a class="dropdown-item chinese" href="./simple.html">簡單的很靠杯</a>
+                              <a class="dropdown-item chinese" href="./big.html">好了啦超大杯</a>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link chinese" href="./Car.html" style="color:#fdf3de;">購物車</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link chinese" href="./about.html" style="color:#fdf3de;">關於我們<span class="sr-only"></span></a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+        </nav>
+    </header><br/><br><br><br><br>
+    <!--////網頁功能選單結束了///-->
+
+    <!--/////側邊導覽列在這裡/////-->
+    <div class="col-xl-12">
+        <div class="row margintop">
+          
+          <div class="col-xl-3">
+            <div class="class="list-group-item list-group-item-action active aria-current="true">
+              <a class="list-group-item list-group-item-action" href="./membercenter.html" style="text-align: center; width: 200px; margin-left: 60px; background-color:#39642a;color: #fdf3de; border-radius: 10px 10px 0 0;"></border>會員資料</a>
+              <a class="list-group-item list-group-item-action" href="./recode.html" style="text-align: center; width: 200px; margin-left: 60px; background-color:#39642a;color: #fdf3de;">消費紀錄</a>
+              <a class="list-group-item list-group-item-action" href="./score.html" style="text-align: center; width: 200px; margin-left: 60px; background-color:#39642a ;color: #fdf3de; border-radius: 0 0 10px 10px;">評分紀錄</a>
+            </div>
+          </div>
+    <!--/////側邊導覽列結束了/////-->
+
+        <!--/////輸入會員資料在這裡/////-->
+          <div class="col-xl-9">
+            <h1>會員資料</h1>
+            <hr style="border-width: 6px;border-color: #aa2d29; width:900px; margin-left: 0%;">
+
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1"">☆姓名 Name☆</label>
+                <input type="text" class="form-control" id="name" style="width: 900px;" value="單身狗">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">☆電話 Phone☆</label>
+                <input type="text" class="form-control" id="phone" style="width: 900px;" value="098787878787">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">☆地址 Address☆</label>
+                <input type="text" class="form-control" id="address" style="width: 900px;" value="320桃園市中壢區中北路200號">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">☆信箱 Email☆</label>
+                <input type="email" class="form-control" id="mail" style="width: 900px;" value="MerryChristmas@gmail.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">☆密碼 Password☆</label>
+                <input type="password" class="form-control"  style="width: 900px;" value="********" id="myInput">
+              </div>
+              <br><br/>
+              <button type="submit" class="btn btn-primary" id="button" style="width: 900px; background-color: #aa2d29; margin-bottom:20px;">儲存🌲</button>
+            </form>
+          </div>
+        </div>
+      </div><br/><br>
+       <!--/////輸入會員資料結束了/////-->
+
+    <!--////版權在這裡///-->
+    <footer>
+        <h5 style="font-family: Noto Serif TC,serif;">Copyright © 2022 比杯傷更杯傷的剩單 All rights reserved</h4>
+    </footer>
+    <!--////版權結束了///-->
+
+    <!--////gotop在這裡///-->
+    <a href="#" class="gotop" style="display: inline;">TOP</a>
+    <!--////gotop結束了///-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+    $("#button").click(function(){
+        if($("#name").val()==""){
+            alert("你還沒填寫姓名呦Σ( ° △ °|||)︴");
+            eval("document.form1['name'].focus()");       
+        }else if($("#phone").val()==""){
+            alert("你還沒填寫電話呦Σ( ° △ °|||)︴");
+            eval("document.form1['phone'].focus()");    
+        }else if($("#address").val()==""){
+            alert("你還沒填寫地址呦Σ( ° △ °|||)︴");
+            eval("document.form1['address'].focus()");       
+        }else if($("#mail").val()==""){
+            alert("你還沒填寫信箱呦Σ( ° △ °|||)︴");
+            eval("document.form1['mail'].focus()");       
+        }else if($("#myInput").val()==""){
+            alert("你還沒填寫密碼呦Σ( ° △ °|||)︴");
+            eval("document.form1['myInput'].focus()");       
+        }else{
+            document.form1.submit();
+        }
+    })
+ })
+  </script>
+  </script>
+</body>
+</html>
