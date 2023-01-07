@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有杯具.cup - 剩單</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap" rel="stylesheet"/>
+    <link rel="icon" href="../assets/images/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/allstyle.css">
+    <style>
+        /* customizable snowflake styling */
+        .snowflake {
+          color: #fff;
+          font-size: 1em;
+          font-family: Arial, sans-serif;
+          text-shadow: 0 0 5px #000;
+        }
+        @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+        </style>
+        <div class="snowflakes" aria-hidden="true">
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+        </div>
+</head>
+<body class="index" style="font-family: Noto Serif TC,serif";>
+    <!--////網頁功能選單在這裡///-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbg fixed-top">
+            <!--///LOGO圖案在這裡///-->
+            <a class="navbar-brand padding0" href="./index.html"><img class="img-fluid" style="width:120px;" src="../assets/images/logo_red.jpg"></a>
+            <!--///LOGO圖案結束了///-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav marginleftauto">
+                    <li class="nav-item">
+                        <a class="nav-link chinese" href="./membersignin.html" style="color:#fdf3de;">登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link chinese" href="./membercenter.html" style="color:#fdf3de;">剩單中心</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle chinese" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#fdf3de;">所有杯具</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item chinese" href="./christmas.html">聖誕老杯杯</a>
+                            <a class="dropdown-item chinese" href="./simple.html">簡單的很靠杯</a>
+                            <a class="dropdown-item chinese" href="./big.html">好了啦超大杯</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link chinese" href="./Car.html" style="color:#fdf3de;">購物車</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link chinese" href="./about.html" style="color:#fdf3de;">關於我們<span class="sr-only"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header><br/>
+    <!--////網頁功能選單結束了///-->
+    <!-- 簡單的很靠杯開始 -->
+    <div class="category">
+        <h1>-所有杯具-</h1>
+        <div class="Good">
+            
+            <div class="product" onclick="location.href='MC1.html'">
+                <div class="sameHeight"><img src="../assets/images/MC1.jpg"></div>
+                <h3>男友麋鹿ㄌ.cup</h3>
+                <p class="price">NT$ 350</p>
+            </div>
+
+            <div class="product" onclick="location.href='MC2.html'">
+                <div class="sameHeight"><img src="../assets/images/MC2.jpg"></div>
+                <h3>金勾杯.cup</h3>
+                <p class="price">NT$ 350</p>
+            </div>
+
+            <div class="product" onclick="location.href='MC3.html'">
+                <div class="sameHeight"><img src="../assets/images/MC3.jpg"></div>
+                <h3>企噗噗.cup</h3>
+                <p class="price">NT$ 350</p>
+            </div>
+          
+        </div>
+        <div class="Good">
+
+            <div class="product" onclick="location.href='MC4.html'">
+                <div class="sameHeight"><img src="../assets/images/MC4.jpg"></div>
+                <h3>Snowman?.cup</h3>
+                <p class="price">NT$ 350</p>
+            </div>
+
+            <div class="product" onclick="location.href='MC5.html'">
+                <div class="sameHeight"><img src="../assets/images/MC5.jpg"></div>
+                <h3>女友麋鹿ㄌ.cup</h3>
+                <p class="price">NT$ 500</p>
+            </div>
+
+            <div class="product" onclick="location.href='MC6.html'">
+                <div class="sameHeight"><img src="../assets/images/MC6.jpg"></div>
+                <h3>HO HO HO.cup</h3>
+                <p class="price">NT$ 500</p>
+            </div>
+        </div>
+
+        <div class="Good">
+            
+            <div class="product" onclick="location.href='simple1.html'">
+                <div class="sameHeight"><img src="../assets/images/simple1.jpg"></div>
+                <h3>頭頂ㄉ綠色.cup</h3>
+                <p class="price">NT$ 200</p>
+            </div>
+
+            <div class="product" onclick="location.href='simple2.html'">
+                <div class="sameHeight"><img src="../assets/images/simple2.jpg"></div>
+                <h3>跟初戀一樣酸的檸檬.cup</h3>
+                <p class="price">NT$ 200</p>
+            </div>
+
+            <div class="product" onclick="location.href='simple3.html'">
+                <div class="sameHeight"><img src="../assets/images/simple3.jpg"></div>
+                <h3>藍藍又紫紫.cup</h3>
+                <p class="price">NT$ 300</p>
+            </div>
+          
+        </div>
+        <div class="Good">
+
+            <div class="product" onclick="location.href='simple4.html'">
+                <div class="sameHeight"><img src="../assets/images/simple4.jpg"></div>
+                <h3>氣死蛋餅黃.cup</h3>
+                <p class="price">NT$ 300</p>
+            </div>
+
+            <div class="product" onclick="location.href='simple5.html'">
+                <div class="sameHeight"><img src="../assets/images/simple5.jpg"></div>
+                <h3>早上吃可頌.cup</h3>
+                <p class="price">NT$ 250</p>
+            </div>
+
+            <div class="product" onclick="location.href='simple6.html'">
+                <div class="sameHeight"><img src="../assets/images/simple6.jpg"></div>
+                <h3>熊熊出沒注意！.cup</h3>
+                <p class="price">NT$ 250</p>
+            </div>
+        </div>
+
+        <div class="Good">
+            
+            <div class="product" onclick="location.href='big1.html'">
+                <div class="sameHeight"><img src="../assets/images/big1.jpg"></div>
+                <h3>好了啦最大杯.cup</h3>
+                <p class="price">NT$ 1000</p>
+            </div>
+
+            <div class="product" onclick="location.href='big2.html'">
+                <div class="sameHeight"><img src="../assets/images/big2.jpg"></div>
+                <h3>長輩桌上都會有.cup</h3>
+                <p class="price">NT$ 350</p>
+            </div>
+
+            <div class="product" onclick="location.href='big3.html'">
+                <div class="sameHeight"><img src="../assets/images/big3.jpg"></div>
+                <h3>#3a757b.cup</h3>
+                <p class="price">NT$ 300</p>
+            </div>
+          
+        </div>
+        <div class="Good">
+
+            <div class="product" onclick="location.href='big4.html'">
+                <div class="sameHeight"><img src="../assets/images/big4.jpg"></div>
+                <h3>王力紅.cup</h3>
+                <p class="price">NT$ 300</p>
+            </div>
+
+            <div class="product" onclick="location.href='big5.html'">
+                <div class="sameHeight"><img src="../assets/images/big5.jpg"></div>
+                <h3>石頭的顏色.cup</h3>
+                <p class="price">NT$ 350</p>
+            </div>
+
+            <div class="product" onclick="location.href='big6.html'">
+                <div class="sameHeight"><img src="../assets/images/big6.jpg"></div>
+                <h3>灰頭土臉.cup</h3>
+                <p class="price">NT$ 350</p>
+            </div>
+        </div>
+    </div>
+
+     <!--~~~~~~~~新增按鈕~~~~~~~~~~~-->
+    <center><button class="add">新增杯具</button></center>
+     <!--~~~~~~~~新增按鈕~~~~~~~~~~~-->
+    
+    
+    
+    <!--////版權在這裡///-->
+    <footer>
+        <h5 style="font-family: Noto Serif TC,serif;">Copyright © 2022 比杯傷更杯傷的剩單 All rights reserved</h5>
+    </footer>
+    <!--////版權結束了///-->
+    <!--////gotop在這裡///-->
+    <a href="#" id="gotop" class="gotop" style="display: inline;">TOP</a>
+    <!--////gotop結束了///-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </script>
+</body>
+</html>
